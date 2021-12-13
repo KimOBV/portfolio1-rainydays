@@ -1,0 +1,96 @@
+body{
+  
+  background-color: #0a3641;
+}
+main{
+  background-color: #0a3641;
+  color:#fff;
+  margin-bottom: 5em;
+  text-align: center;
+}
+main img{
+  width: 100%;
+}
+h1, p{
+  margin: .8em;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1em;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.prod {
+  padding: 0;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+.prod h3 {
+  font-size: 1rem;
+  margin: .3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+.prod h4 {
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #ff7f36;
+  border-radius: 1px;
+  border-top-left-radius: 10px;
+  padding: 0.5em;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.prod img {
+  height: 15em;
+  width: auto;
+}
+.prod a{
+  text-decoration: none;
+  color: #fff;
+}
+a{
+  text-decoration: underline;
+  color: #fff;
+  margin: auto;
+}
+.addToCart{
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 4em 1em 4em;
+}
+.addToCart h2{
+  font-size: 1.5rem;
+  margin: auto;
+}
+.addToCart button{
+  background-color: #ff7f36;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: .2em .6em;
+  border-radius: .4em;
+  border: none;
+
+}
+.other{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.added p{
+  color: #ff7f36;
+  margin: 0 auto 2em auto;
+}
+.others{
+  margin-top: 1em;
+}

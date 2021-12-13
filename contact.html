@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>RainyDays | Contact</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/static.css">
+  </head>
+  <body>
+      <header>
+      <img src="/img/logo.png" alt="RainyDays logo" />
+    </header>
+    <main>
+        <div class="help">
+            <h1>Contact Us</h1>
+            <p>WE'RE HERE TO HELP.</p> 
+        </div>
+      <h3 class="succsess">Your submission has been sent!</h3>
+      <form id="form">
+        <div class="items">
+          <label for="name">Name</label>
+          <div class="error" id="errorName">Please enter your name</div>
+          <input type="text" name="name" id="name" placeholder="(Required)" />
+        </div>
+        <div class="items">
+          <label for="subject">Subject</label>
+          <div class="error" id="errorSubject">Please enter a subject</div>
+          <input type="text" name="subject" id="subject" placeholder="(Minimum 10 characters)" />
+        </div class="items">
+        <div class="items">
+          <label for="email">Email</label>
+          <div class="error" id="errorEmail">Please enter a valid email address</div>
+          <input type="email" name="email" id="email" placeholder="(Required)" />
+        </div>
+        <div class="items">
+          <label for="address">Message</label>
+          <div class="error" id="errorAddress">Please tell us more.</div>
+          <textarea rows="5" type="text" name="address" id="address" placeholder="(Minimum 25 characters)"></textarea>
+        </div>
+        <div class="items">
+        <button type="submit">Submit</button>
+        </div>  
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img src="/img/icon/home.svg" alt="" />
+            <p>Home</p>
+          </a>
+        </div>
+        <div>
+          <a href="products.html">
+            <img src="/img/icon/bag.svg" alt="" />
+            <p>Products</p>
+          </a>
+        </div>
+        <div>
+          <a href="contact.html">
+            <img src="/img/icon/supportA.svg" alt="" />
+            <p id="activePage">Contact</p>
+          </a>
+        </div>
+        <div>
+          <a href="cart.html">
+            <img src="/img/icon/cart.svg" alt="" />
+            <p>Cart</p>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

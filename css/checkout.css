@@ -1,0 +1,122 @@
+main {
+  margin: 1em 0.4em 6em 0.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  margin: 1em 0 0.6em 0;
+}
+section {
+  margin: 1em auto;
+}
+.items,
+.shipping,
+.payment,
+.summary {
+  margin: auto 1.5em;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0.5em auto;
+  border-bottom: 1px solid black;
+}
+.items img {
+  width: 3em;
+}
+.item {
+  font-size: 1rem;
+  text-align: center;
+}
+.sizeSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.qty {
+  display: flex;
+  flex-direction: column;
+}
+.qty input {
+  width: 2.5em;
+}
+#req{
+    font-size: .8rem;
+}
+#cci{
+    border-bottom: 1px solid black;
+    margin: 1em auto;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product h2,
+h3 {
+  font-size: 0.8rem;
+}
+.remove {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.shipping form div {
+  margin: 0.6em 0;
+}
+
+.name,
+.adress,
+.adress2,
+.zip,
+.city,
+.country,
+.email {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.card,
+.cName,
+.xDate,
+.inputCard,
+.cvv {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6em auto;
+}
+.xDate{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xDate select{
+  align-content: flex-end;
+}
+.sProduct,
+.sShipping,
+.sumTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.checkout {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1.5em auto;
+}
+#completeBtn {
+  background-color: #ff7f36;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.2em 0.6em;
+  border-radius: 0.4em;
+}
+.sShipping {
+  border-bottom: 1px solid black;
+}

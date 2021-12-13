@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RainyDays | Cart</title>
+    <link rel="stylesheet" href="/css/static.css" />
+    <link rel="stylesheet" href="/css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/img/logo.png" alt="RainyDays logo" />
+    </header>
+    <main>
+      <section class="items">
+        <h1>1. Your Items</h1>
+        <div class="title">
+          <p>Product</p>
+          <p>Size</p>
+          <p>Quantity</p>
+          <p>Total</p>
+        </div>
+        <div class="product">
+          <div class="item">
+            <img src="/img/shoe3.png" alt="" />
+            <h2>Shoe 3</h2>
+          </div>
+          <div class="sizeSelect">
+            <label for="size">Size</label>
+            <select name="size" id="size">
+              <option value="" selected hidden>Size</option>
+              <option value="36">36</option>
+              <option value="37">37</option>
+              <option value="38">38</option>
+              <option value="39">39</option>
+              <option value="40">40</option>
+              <option value="41">41</option>
+              <option value="42">42</option>
+              <option value="43">43</option>
+              <option value="44">44</option>
+              <option value="45">45</option>
+            </select>
+          </div>
+          <div class="qty">
+            <label for="qty">Quantity</label>
+            <input type="number" name="qty" min="1" placeholder="1" />
+          </div>
+          <div class="total">
+            <h3>899 kr</h3>
+          </div>
+        </div>
+        <div class="remove"><a href="#">Remove</a></div>
+      </section>
+      <section class="shipping">
+        <h1>2. Shipping</h1>
+        <form>
+          <div class="name">
+            <label for="name">Full Name*</label>
+            <input type="text" id="fullName" required placeholder="Full Name*" />
+          </div>
+          <div class="adress">
+            <label for="adress">Adress*</label>
+            <input type="text" id="adress" name="adress" required placeholder="Adress*" />
+          </div>
+          <div class="adress2">
+            <label for="adress2">Adress 2</label>
+            <input type="text" id="adress2" name="adress2" placeholder="Adress 2" />
+          </div>
+          <div class="zip">
+            <label for="zip">Zip/Postal Code*</label>
+            <input type="text" name="zip" id="zip" required placeholder="Zip/Postal Code*" maxlength="4" />
+          </div>
+          <div class="city">
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required placeholder="City*" />
+          </div>
+          <div class="country">
+            <label for="country">Country*</label>
+            <input type="text" id="country" name="country" required placeholder="Country*" />
+          </div>
+          <div class="email">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required placeholder="Email*" />
+          </div>
+          <p id="req">*Required</p>
+        </form>
+      </section>
+      <section class="payment">
+        <h1>3. Payment Information</h1>
+        <p id="cci">Credit Card Info</p>
+        <form>
+          <div class="card">
+            <label for="card">Card Number*</label>
+            <input
+              type="number"
+              id="card"
+              name="card"
+              required
+              placeholder="1234 1234 1234 1234"
+              minlength="16"
+              maxlength="16"
+            />
+          </div>
+          <div class="cName">
+            <label for="cName">Name of Cardholder*</label>
+            <input type="text" id="cName" name="cName" required placeholder="Johnny Doeson" />
+          </div>
+          <div class="xDate">
+            <label for="xDate">Expiration date*</label>
+            <div class="xDates">
+              <select name="xDate" id="xDate" required>
+                <option value="">Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <select name="xYear" id="xYear" required>
+                <option value="">Year</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+              </select>
+            </div>
+            <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
+          </div>
+          <div class="cvv">
+            <label for="cvv">CVV*</label>
+            <input type="number" id="cvv" name="cvv" required placeholder="123" maxlength="3" />
+          </div>
+        </form>
+      </section>
+      <section class="summary">
+        <h1>4. Order Summary</h1>
+        <div class="orderSummary">
+          <div class="sProduct">
+            <p>Items</p>
+            <p>899 kr</p>
+          </div>
+          <div class="sShipping">
+            <p>Shipping Cost</p>
+            <p>149 kr</p>
+          </div>
+          <div class="sumTotal">
+            <h2>Total</h2>
+            <h2>1048 kr</h2>
+          </div>
+        </div>
+      </section>
+      <div class="checkout">
+        <input type="submit" value="Complete purchase" id="completeBtn" />
+      </div>
+    </main>
+    <footer>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img src="/img/icon/home.svg" alt="" />
+            <p>Home</p>
+          </a>
+        </div>
+        <div>
+          <a href="products.html">
+            <img src="/img/icon/bag.svg" alt="" />
+            <p>Products</p>
+          </a>
+        </div>
+        <div>
+          <a href="contact.html">
+            <img src="/img/icon/support.svg" alt="" />
+            <p>Contact</p>
+          </a>
+        </div>
+        <div>
+          <a href="cart.html">
+            <img src="/img/icon/cartA.svg" alt="" />
+            <p id="activePage">Cart</p>
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
