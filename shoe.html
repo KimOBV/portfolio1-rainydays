@@ -14,32 +14,14 @@
       <img src="/img/logo.png" alt="RainyDays logo" />
     </header>
     <main>
-      <div class="prodInfo">
-        <h1>Shoe 2</h1>
-        <img src="/img/shoe2.png" alt="shoe2" />
-        <p>
-          100% waterproof, breathable shoes is ideal for mixed-weather vacations where you might get caught in a sudden
-          downpour.
-        </p>
-        <div class="addToCart">
-            <h2>899 kr</h2>
-            <button id="addToCart">Add to Cart</button>
-        </div>
-        <div class="added"></div>
-      </div>
-      <h2 class="others">Other Products</h2>
-      <div class="other">
-        <div class="prod">
-          <a href="shoe.html">
-            <h3>Shoe 3</h3>
-            <img src="/img/shoe3.png" alt="" />
-          </a>
-        </div>
-        <div class="prod">
-          <a href="shoe.html">
-            <h3>Shoe 4</h3>
-            <img src="/img/shoe4.png" alt="" />
-          </a>
+      <div class="shoe"></div>
+      <div class="shoeInfo"></div>
+      <div class="dropdown">
+        <label for="size">Choose size:</label>
+        <select name="size" id="size" method="POST">
+          <option value="" selected hidden>Size</option>
+        </select>
+        <input type="submit" value="Add to cart" class="submitBtn" id="submitBtn" />
       </div>
     </main>
     <footer>
@@ -72,5 +54,6 @@
       </nav>
     </footer>
     <script src="/js/addToCart.js"></script>
+    <script src="/js/getID.js"></script>
   </body>
 </html>
