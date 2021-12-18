@@ -1,8 +1,9 @@
 main {
-  margin: 1em 0.4em 6em 0.4em;
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #fff;
 }
 h1 {
   margin: 1em 0 0.6em 0;
@@ -106,7 +107,7 @@ h3 {
 .checkout {
   display: flex;
   flex-direction: row-reverse;
-  margin: 1.5em auto;
+  margin: 1.5em auto 8em auto;
 }
 #completeBtn {
   background-color: #ff7f36;

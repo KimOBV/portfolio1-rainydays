@@ -61,3 +61,12 @@ nav img {
 #cartItems p {
     color: #ff7f36;
 }
+
+body{
+  margin: auto;
+  background-color: #0a3641;
+}
+header, main, footer, footer nav {
+  margin: auto;
+  max-width: 1024px;
+}
